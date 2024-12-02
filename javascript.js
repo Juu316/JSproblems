@@ -408,13 +408,148 @@
 // console.log(sum);
 
 // 38) Өгөгдсөн тоог тодорхой давталт ашиглан өгөгдсөн тоон удаа нэм.
-let n, m, sum;
-n= 42;
-m = 5;
-sum=0;
-for(let i=1; i<=m; i++){
-  sum=sum+n;
-}
-console.log(sum);
+// let n, m, sum;
+// n= 42;
+// m = 5;
+// sum=0;
+// for(let i=1; i<=m; i++){
+//   sum=sum+n;
+// }
+// console.log(sum);
 
-// 39)
+// 39)2-ын өгөгдсөн тоон зэргийг ол. /2-ын n зэрэг гэдэг нь 2*2*...*2. Жишээ нь 2-ын 3 зэрэг 2*2*2=8 /
+// let n, answer;
+// n=8;
+// answer=1;
+// for(let i=1; i<=n; i++){
+//   answer = 2*answer;
+// }
+// console.log(answer);
+
+// 40) Өгөгдсөн тооны n зэргийг ол.
+// let a , n , an;
+// a = 5 ;
+// n= 4 ;
+// an = 1;
+// for(let i = 1; i<=n; i++){
+//   an = a * an;
+// }
+// console.log(an);
+
+// 41) Тоон дүн 3-аас их бол тэнцсэнд тооцно. Бусад тохиолдолд унана. Өгөгдсөн тоон дүн тэнцсэн эсэхийг тогтоо.
+// let a , answer;
+// a = 4;
+// if (a==4 || a==5){
+//   console.log("Tentssen")
+// }else if(a==2 || a==3){
+//   console.log("Unasan")
+// }else{console.log("wrong input brother")}
+
+// 42) Өгөгдсөн тоон дүнг үсгэн дүн рүү шилжүүл.
+// let a , answer;
+// a = 5;
+// if (a==5){
+//   console.log("Onts")
+// }else if(a==4){
+//   console.log("Sain")
+// }else if(a==3){
+//   console.log("Dund")
+// }else if(a==2){
+//   console.log("Muu")
+// }else{console.log("wrong input brother")}
+
+// 43) Өгөгдсөн тоон үнэлгээг үсгэн үнэлгээнд шилжүүл.
+// let a , answer;
+// a = 65;
+// if(a>100){
+//   console.log("Ymar sain ym be sd")
+// }else if (a>=90 && a<=100){
+//   console.log("A")
+// }else if(a>=80 && a<90){
+//   console.log("B")
+// }else if(a>=70 && a<80){
+//   console.log("C")
+// }else if(a>=60 && a<70){
+//   console.log("D")
+// }else if(a>=0 && a<60){
+//   console.log("F")
+// }else{console.log("wrong input brother")}
+
+// 44) Долоо хоногийн дугаар өгөгдөхөд харгалзах гарагийг англиар хэвлэ. Эхний үсгийг л томоор бичнэ.
+// let a ;
+// a = 1;
+// if(a==1){
+//   console.log("Monday")
+// }else if (a==2){
+//   console.log("Tuesday")
+// }else if (a==3){
+//   console.log("Wednesday")
+// }else if (a==4){
+//   console.log("Thursday")
+// }else if (a==5){
+//   console.log("Friday")
+// }else if (a==6){
+//   console.log("Saturday")
+// }else if (a==7){
+//   console.log("Sunday")
+// }else{console.log("wrong input brother")}
+
+// 45) Өгөгдсөн сар аль улиралд хамаарах вэ. Улирлыг англиар бичихдээ эхний үсгийг томоор бичнэ үү.
+// let a;
+// a = 11;
+// if (a ==11 || a==12 || a==1){
+//   console.log("Winter")
+// }else if (a ==2 || a==3 || a==4){
+//   console.log("Spring")
+// }else if (a ==5 || a==6 || a==7){
+//   console.log("Summer")
+// }else if (a ==8 || a==9 || a==10){
+//   console.log("Autumn")
+// }else{console.log("wrong input brother")}
+
+// 46) Өгөгдсөн 3 тоогоор талаа хийсэн гурвалжинг байгуулж болох бол YES үгүй бол NO гэж хэвлэ.
+// let a , b , c ;
+// a=3;
+// b=5;
+// c=7;
+// if ((a+b)>c && (a+c)>b && (b+c)>a){
+//   console.log("YES")
+// }else{console.log("NO")}
+
+// 47) Өгөгдсөн тооны хүрдийг дараах хэлбэрээр гарга. 1-10
+// let n ;
+// n= 10;
+// if(n==1 ||n==2 ||n==3 ||n==4 ||n==5 ||n==6 ||n==7 ||n==8 ||n==9 ||n==10){
+// for (let i = 1; i<=10 ; i++){
+//   console.log(n  + " * " + i+ " = " + n*i);
+// }}else{console.log("Wrong input broda")}
+
+// 48) a тооны n хүртэлх зэрэгтүүдийг жишээн дээрх хэлбэрээр хэвлэ. n<10
+// let a , n ;
+// a = 5;
+// n= 9;
+// if(n<10 && a > 1){
+//   for (let i = 1; i<=9 ; i++){
+//     console.log( a + "^" + i + "=" + a**i)
+//   }
+// }else{console.log("Wrong input broda")}
+
+//49) Өгөгдсөн илэрхийллийн утгыг ол. A=B*C-D (https://www.spoj.com/RGB7/problems iin ehnii nuur duuslaa)
+// let A , B , C , D ;
+// B = 5;
+// C=6;
+// D=7;
+// A=B*C-D;
+// console.log(A);
+
+// 50) RGB7170 Нэг орцтой байрны давхрын тоо, давхар дахь хаалганы тоо өгөгдөв. Айлын хаалганы дугаар мэдэгдэж байгаа үед тэрхүү айл хэд дэх давхрын хэд дэх хаалганд амьдардаг вэ? Давталт ашиглахгүй бодно.
+let davhar , haalga , hedendavhar, hedhaalga, input;
+davhar = 5;
+haalga = 8;
+input = 30;
+if(input<=davhar*haalga){
+hedhaalga=input%haalga ;
+hedendavhar= Math.floor(input/haalga);
+console.log(hedendavhar +" "+hedhaalga);} else{
+  console.log("wrong input broda");
+}
