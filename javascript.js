@@ -771,22 +771,40 @@
 // }
 
 // 63) RGB7309 Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Палиндром тоо гэдэг нь тонгорогсон тоотойгоо тэнцүү тоог хэлнэ.
-let reverse, cipher;
-let n = prompt("Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Too:");
-reverse = 0;
-if (n >= 0) {
-  do {
-    cipher = n % 10;
-    reverse = reverse + cipher;
-    n = Math.floor(n / 10);
-    reverse = reverse * 10;
-  } while (n >= 1);
-  console.log("тонгорогсон тоо: " + reverse / 10);
-  if (reverse / 10 == m) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
-} else {
-  console.log("Wrong input, perhaps?");
-}
+// let reverse, cipher;
+// let n = prompt("Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Too:");
+// let m = n;
+// reverse = 0;
+// if (n >= 0) {
+//   do {
+//     cipher = m % 10;
+//     reverse = reverse + cipher;
+//     m = Math.floor(m / 10);
+//     reverse = reverse * 10;
+//   } while (m >= 1);
+
+//   if (reverse/10  == n) {
+//     console.log("YES");
+//   } else {
+//     console.log("NO");
+
+//   }
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+//64) RGB7310 Өгөгдсөн тоо хоёрын зэрэгт мөн бол YES үгүй бол NO гэж хэвлэ.
+// let n, i;
+// n = prompt("Өгөгдсөн тоо хоёрын зэрэгт мөн бол YES үгүй бол NO гэж хэвлэ. Too:");
+// while(n<1 && n>0){
+//   n = n * 2;
+// }
+// while(n>=4){
+//   n = n/2;
+// }
+// if(n%2==0 || n==1){console.log("YES")}else{console.log("NO")}
+
+
+
+
+
