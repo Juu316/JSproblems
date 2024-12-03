@@ -17,7 +17,56 @@
 // let UNDEFINED = undefined; //
 // console.log(box);
 
+//ANgiin 14 exercises
+// 1. Тэгш, сондгой тоог тодорхойлох
+// let n = prompt("Тэгш, сондгой тоог тодорхойлох. Too bichne uu:");
+// if (n >= 0 && Math.ceil(n % 1) != 1) {
+//   if (n % 2 == 0) {console.log("Tegshhen saihan too yma");}
+//   if (n % 2 == 1) {console.log("Sondgoi too bno");}
+// } else {console.log("Wrong input, perhaps?");}
 
+//2.Тоог эерэг, сөрөг, тэг байдлаар ангилах
+// let n = prompt("Тоог эерэг, сөрөг, тэг байдлаар ангилах. Too bichne uu:");
+// if(n==0){console.log("Teg");}
+// if(n>0){console.log("Eyreg");}
+// if(n<0){console.log("Surug");}
+
+// 3. Нэг тоо нөгөө тоогоор хуваагддаг эсэхийг шалгах
+// let n = prompt(
+//   "Нэг тоо нөгөө тоогоор хуваагддаг эсэхийг шалгах. Huvaagdagchiig bichne uu:"
+// );
+// let m = prompt(
+//   "Нэг тоо нөгөө тоогоор хуваагддаг эсэхийг шалгах. Huvaagchiig bichne uu:"
+// );
+// if (n % m == 0) {
+//   console.log("Huvaagdaj baina.");
+// } else {
+//   console.log("Huvaagdahgui bh shig bnda");
+// }
+
+// 4. Тоон оноог үсгийн дүн (A, B, C, D, F) болгон хувиргах дүнгийн тооцоолуур
+// let n = prompt(
+//   "Тоон оноог үсгийн дүн (A, B, C, D, F) болгон хувиргах дүнгийн тооцоолуур. Toon onoogoo bichne uu:"
+// );
+// if (n <= 100 && n >= 90) {
+//   console.log("A");
+// }
+// if (n < 90 && n >= 80) {
+//   console.log("B");
+// }
+// if (n < 80 && n >= 70) {
+//   console.log("C");
+// }
+// if (n < 70 && n >= 60) {
+//   console.log("D");
+// }
+// if (n < 60 && n >= 0) {
+//   console.log("F");
+// } else {
+//   ("Wrong input, perhaps?");
+// }
+
+// 5. Цельсийг Фаренгейтын температурт хувиргах
 
 // 1) hureenii urt oloh bodlogo
 // let a, b, c, p;
@@ -144,7 +193,6 @@
 // 17) Өгөгдсөн сарыг жил сар руу шилжүүл.
 // let inputsar, jil, sar, answer;
 // inputsar = 70;
-
 // jil = (inputsar - (inputsar % 12)) / 12;
 // sar = inputsar % 12;
 // answer = jil + " jil " + sar + " sar";
@@ -190,10 +238,10 @@
 
 // 22) Өгөгдсөн 4 тооны багыг ол.
 // let a, b, c, d, answer;
-// a = 7;
-// b = 7;
-// c = 7;
-// d = 7;
+// a = prompt("Too 1:");
+// b = prompt("Too 2:");
+// c = prompt("Too 3:");
+// d = prompt("Too 4:");
 // if (a > b && a > c && a > d) {
 //   answer = a;
 // } else if (b > a && b > c && b > d) {
@@ -249,7 +297,7 @@
 // answer = a * b * c * d;
 // console.log(answer);
 
-// 25) Өгөгдсөн 3 тоон дахь тэгш тоонуудын нийлбэрийг ол. Ядаж 1 тэгш тоо бий. 
+// 25) Өгөгдсөн 3 тоон дахь тэгш тоонуудын нийлбэрийг ол. Ядаж 1 тэгш тоо бий.
 // let a, b, c, x, answer;
 // a=1;
 // b=50;
@@ -300,7 +348,7 @@
 // }
 // console.log(i);
 
-// 28) Өгөгдсөн 4 тоон дотроос 3-д хуваагддаг тоонуудын тоог ол. 
+// 28) Өгөгдсөн 4 тоон дотроос 3-д хуваагддаг тоонуудын тоог ол.
 // let a, b, c , d, i;
 // a=21;
 // b=25;
@@ -365,7 +413,6 @@
 // if(a%2===0){
 //   console.log("YES \n")
 // }else{console.log("NO \n")}
-
 // if(b%2===0){
 //   console.log("YES \n")
 // }else{console.log("NO \n")}
@@ -384,7 +431,7 @@
 // n = 10000;
 // for (i=1; i<=n; i++ ){
 //   sum+=i;
-// } 
+// }
 // console.log(sum);
 
 // 36) n! ол.
@@ -543,13 +590,203 @@
 // console.log(A);
 
 // 50) RGB7170 Нэг орцтой байрны давхрын тоо, давхар дахь хаалганы тоо өгөгдөв. Айлын хаалганы дугаар мэдэгдэж байгаа үед тэрхүү айл хэд дэх давхрын хэд дэх хаалганд амьдардаг вэ? Давталт ашиглахгүй бодно.
-let davhar , haalga , hedendavhar, hedhaalga, input;
-davhar = 5;
-haalga = 8;
-input = 30;
-if(input<=davhar*haalga){
-hedhaalga=input%haalga ;
-hedendavhar= Math.floor(input/haalga);
-console.log(hedendavhar +" "+hedhaalga);} else{
-  console.log("wrong input broda");
+// let davhar , haalga , hedendavhar, hedhaalga, input;
+// davhar = 5;
+// haalga = 8;
+// input = 30;
+// if(input<=davhar*haalga){
+// hedhaalga=input%haalga ;
+// hedendavhar= Math.floor(input/haalga);
+// console.log(hedendavhar +" "+hedhaalga);} else{
+//   console.log("wrong input broda");
+// }
+
+//51) RGB7171 Байшингийн давхар, орц, нэг давхарт суудаг айлын тоо мэдэгдэж байвал энэхүү байшингийн өгөгдсөн тоот нь хэддүгээр орцны, хэдэн давхрын хэд дэх хаалга вэ?
+// let davhar, orts, haalgatoo, toot, hedorts, heddavhar, hedtoot;
+// davhar = 16;
+// orts = 3;
+// haalgatoo = 5;
+// toot = 100;
+// if (toot <= davhar * orts * haalgatoo && toot >= 1) {
+//   hedtoot = toot % haalgatoo;
+//   hedorts = Math.ceil(toot / (davhar * haalgatoo));
+//   heddavhar = Math.ceil(toot / haalgatoo) % davhar;
+//   console.log(
+//     "Orts: " +
+//       hedorts +
+//       "\nDavhar: " +
+//       heddavhar +
+//       "\nHed deh haalga: " +
+//       (hedtoot + 1)
+//   );
+// } else {
+//   console.log("Ail anduursan ym bailgui dee");
+// }
+
+// 52) RGB7070 Өгөгдсөн натурал тоо n хүртэлх натурал тоонуудын нийлбэрийг ол.Давталт ашиглахгүй болно.
+// let n, sum;
+// n = 11;
+// sum = (n * (n + 1)) / 2;
+// console.log(sum);
+
+// 53)
+// RGB7071 Өгөгдсөн n тоо хүртэлх квадратуудын нийлбэрийг ол. Давталт ашиглахгүй болно.
+// let n, sum;
+// n = 4;
+// sum = (n*(n+1)*(2*n+1))/6;
+// console.log(sum);
+
+// 54) RGB7072 - Нийлбэр 3 Өгөгдсөн сондгой тоо n хүртэлх натурал сондгой тоонуудын нийлбэрийг ол. Давталт ашиглахгүй.
+// let n, sum;
+// n = 9;
+// if (n % 2 == 0) {
+//   sum = (n / 2) ** 2;
+// } else if (n % 2 == 1) {
+//   sum = ((n + 1) / 2) ** 2;
+// }
+// console.log(sum);
+
+//55) RGB7301 - Ахмад орны цифр . Өгөгдсөн натурал тооны ахмад орны цифрийг ол.
+// let n, i;
+// n = 516;
+// while (n > 1) {
+//   n = n / 10;
+// }
+// console.log(Math.floor(n * 10));
+
+// 56) RGB7302 - Цифрүүдийн нийлбэр Өгөгдсөн тооны цифрүүдийн нийлбэрийг ол.
+// let n, sum, cipher;
+// n = prompt("Too oruulnaa uu");
+// sum = 0;
+// while (n >= 1) {
+//   cipher = n % 10;
+//   n = Math.floor(n / 10);
+//   sum = sum + cipher;
+// }
+// console.log(sum);
+
+// 57) RGB7303 Өгөгдсөн тоон дахь тэгш цифрүүдийн нийлбэрийг ол.
+// let n, sum, cipher;
+// n = prompt("Too oruulna uu:");
+// sum = 0;
+// while (n >= 1) {
+//   cipher = n % 10;
+//   if (cipher % 2 == 0) {
+//     cipher = cipher;
+//   } else {
+//     cipher = 0;
+//   }
+//   n = Math.floor(n / 10);
+//   sum = sum + cipher;
+// }
+// console.log(sum);
+
+// 58) RGB7304 Өгөгдсөн тоон дахь сондгой цифрүүдийн тоог ол.
+// let n, sum, cipher;
+// n = prompt("Too oruulna uu:");
+// sum = 0;
+// if (n >= 0) {
+//   while (n >= 1) {
+//     cipher = n % 10;
+//     if (cipher % 2 == 1) {
+//       sum = sum + 1;
+//     }
+//     n = Math.floor(n / 10);
+//   }
+//   console.log(sum);
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 59) RGB7305 Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол.
+// let n, m, sum, cipher;
+// n = prompt(
+//   "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Too oruulna uu:"
+// );
+// m = prompt(
+//   "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Cipher oruulna uu:"
+// );
+// sum = 0;
+// if (n >= 0) {
+//   while (n >= 1) {
+//     cipher = n % 10;
+//     n = Math.floor(n / 10);
+//     if (cipher == m) {
+//       sum = sum + 1;
+//     }
+//   }
+//   console.log(sum);
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 60) RGB7306 Өгөгдсөн тооны их цифрийг ол.
+// let n, cipher, highest;
+// highest = 0;
+// n = prompt("Өгөгдсөн тооны их цифрийг ол. Too:");
+// if (n >= 0) {
+//   while (n >= 1) {
+//     cipher = n % 10;
+//     n = Math.floor(n / 10);
+//     if (cipher > highest) {
+//       highest = cipher;
+//     }
+//   }
+//   console.log(highest);
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 61) RGB7307 Өгөгдсөн тоон дахь бага цифрийг ол.
+// let n, cipher, lowest;
+// lowest = 9;
+// n = prompt("Өгөгдсөн тоон дахь бага цифрийг ол. Too:");
+// if (n >= 0) {
+//   while (n >= 1) {
+//     cipher = n % 10;
+//     n = Math.floor(n / 10);
+//     if (cipher <= lowest) {
+//       lowest = cipher;
+//     }
+//   }
+//   console.log(lowest);
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 62) RGB7308 Өгөгдсөн тооны тонгорогсон тоог ол.
+// let n, reverse, cipher;
+// n = prompt("Өгөгдсөн тооны тонгорогсон тоог ол. Too:");
+// reverse = 0;
+// if (n >= 0) {
+//   do {
+//     cipher = n % 10;
+//     reverse = reverse + cipher;
+//     n = Math.floor(n / 10);
+//     reverse = reverse * 10;
+//   } while (n >= 1);
+//   console.log("тонгорогсон тоо: " + reverse / 10);
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 63) RGB7309 Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Палиндром тоо гэдэг нь тонгорогсон тоотойгоо тэнцүү тоог хэлнэ.
+let reverse, cipher;
+let n = prompt("Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Too:");
+reverse = 0;
+if (n >= 0) {
+  do {
+    cipher = n % 10;
+    reverse = reverse + cipher;
+    n = Math.floor(n / 10);
+    reverse = reverse * 10;
+  } while (n >= 1);
+  console.log("тонгорогсон тоо: " + reverse / 10);
+  if (reverse / 10 == m) {
+    console.log("YES");
+  } else {
+    console.log("NO");
+  }
+} else {
+  console.log("Wrong input, perhaps?");
 }
