@@ -804,6 +804,31 @@
 // }
 // if(n%2==0 || n==1){console.log("YES")}else{console.log("NO")}
 
+// 65) RGB7311 Өгөгдсөн тоог 3-ын зэрэгтэд хураа.
+// let n ;
+// n = prompt("Өгөгдсөн тоог 3-ын зэрэгтэд хураа. Too:");
+// while(n%3==0 && n>1){
+//   n=n/3;
+// }
+// console.log(n);
+
+// 66) RGB7312 Өгөгдсөн тоо ямар нэгэн тооны факториал бол тэр тоог хэвлэ. Үгүй бол No гэж хэвлэ.
+// let n, i = 1, m = 1;
+// n = prompt("Factorial mun uu? Too:");
+// while (n > m) {
+//   m = m * i;
+//   i++;
+// }
+// if (n == m) {
+//   console.log(m);
+// } else { console.log("No") }
+
+// 67) RGB7313 - ХИЕХ
+let a = prompt("Too 1:"); let b = prompt("Too 2:");
+let i=1;
+for(i;a%i==0 && b%i==0;i++){
+
+}
 
 
 
