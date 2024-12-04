@@ -67,6 +67,40 @@
 // }
 
 // 5. Цельсийг Фаренгейтын температурт хувиргах
+// let c, f;
+// c = prompt("Celsius to Fahrenheit. Celsuis: ");
+// f = c * 1.8 + 32;
+// console.log(f + "°F");
+
+// 6. Өгөгдсөн жил нь өндөр жил эсэхийг шалгах
+// let input, l;
+// input = prompt("Jil:");
+
+// if (input % 4 == 0) {
+//   if (input % 100 == 0 && input % 400 != 0) {
+//     console.log("Namhan jil bn.");
+//   } else {
+//     console.log("Undur jil mun bn.");
+//   }
+// } else {
+//   console.log("Namhan jil bn.");
+// }
+
+// 7. Насны ангилал тодорхойлогч (Хүүхэд, Өсвөр үе, Насанд хүрсэн, Ахимаг нас)
+// let n = prompt("Nas:");
+// if (n >= 0 && n <= 12) {
+//   console.log("Хүүхэд");
+// } else if (n >= 13 && n <= 17) {
+//   console.log("Өсвөр үе");
+// } else if (n >= 18 && n <= 59) {
+//   console.log("Насанд хүрсэн");
+// } else if (n >= 60) {
+//   console.log("Ахимаг нас");
+// } else {
+//   console.log("Wrong input, perhaps?");
+// }
+
+// 8. Худалдан авсан дүнгийн дагуу янз бүрийн хөнгөлөлтийн хувь хэрэглэдэг хөнгөлөлтийн тооцоолуур
 
 // 1) hureenii urt oloh bodlogo
 // let a, b, c, p;
@@ -424,7 +458,10 @@
 // console.log("IOI");
 
 // 34) Дэлгэцэнд IOI гэж 3 удаа хэвлэ.
-// console.log("IOI \nIOI \nIOI")
+// for (let i = 0; i < 3; i++) {
+//   console.log("IOI");
+// }
+// console.log("IOI \nIOI \nIOI");
 
 // 35) Эхний n тооны нийлбэрийг тодорхой давталт ашиглан ол.
 // let i, n, sum=0;
@@ -824,12 +861,124 @@
 // } else { console.log("No") }
 
 // 67) RGB7313 - ХИЕХ
-let a = prompt("Too 1:"); let b = prompt("Too 2:");
-let i=1;
-for(i;a%i==0 && b%i==0;i++){
+// let a = prompt("Too 1:");
+// let b = prompt("Too 2:");
+// while (b !== 0) {
+//   let temp = b;
+//   b = a % b;
+//   a = temp;
+// }
+// console.log("ХИЕХ= "a);
 
-}
+// 68) RGB7314 - ХБЕХ
+// let a = prompt("Too 1:");
+// let b = prompt("Too 2:");
+// // /*GCD олох функц*/
+// function gcd(a, b) {
+//   while (b !== 0) {
+//     let temp = b;
+//     b = a % b;
+//     a = temp;
+//   }
+//   return Math.abs(a);
+// }
+// // /*LCM олох функц*/
+// function lcm(a, b) {
+//   return Math.abs(a * b) / gcd(a, b);
+// }
+// console.log(lcm(a, b));
 
+// 69) RGB7315 - Бутархайг хураа
+// let a = prompt("Butarhain hurtver : ");
+// let b = prompt("Butarhain huvaari : ");
+// function gcd(a, b) {
+//   while (b !== 0) {
+//     let temp = b;
+//     b = a % b;
+//     a = temp;
+//   }
+//   return Math.abs(a);
+// }
+// console.log("Hurtver:" + a / gcd(a, b));
+// console.log("Huvaari:" + b / gcd(a, b));
 
+// 70) RGB7220 - Цифр давталт Өгөгдсөн цифрийг цифрийнх нь тоогоор давтан хэвлэ.
+// let n, cipher;
+// n = prompt("Cipher:");
+// for (let i = 1; i <= n; i++) {
+//   console.log(n);
+// }
 
+// 71) RGB7221 - Цифр хүртэлх -- Өгөгдсөн цифр хүртэлх цифрүүдийг нэг хоосон зайгаар тусгаарлан хэвлэ. Сүүлийн цифрийн ард хоосон зай байхгүй. Мөр дуусгана.
+// let cipher = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let n = prompt("Cipher :");
+// for (let i = 0; i < n; i++) {
+//   console.log(cipher[i]);
+// } /* log deer bol zai , mur duusgah edr hud2 ahah,  */
 
+// 72) RGB7222 - Есөөс цифр хүртэл - Есийн цифрээс өгөгдсөн цифр хүртэл нэг нэгээр нэг мөрөнд хэвлэ.
+// let n = prompt("Cipher :");
+// for (let i = 9; i >= n; i--) {
+//   console.log(i);
+// }
+
+// 73) RGB7400 Өгөгдсөн натурал тоо хүртэлх тоонуудыг дараах хэлбэрээр хэвлэнэ үү.
+// let n = prompt("Natural too: ");
+// let a = 0;
+// for (let i = 1; i <= n; i++) {
+//   console.log(i);
+// /* tegj bgaad neg murund bichij surnaa */
+
+//74) RGB7401 Давхар давталт 1
+// let cipher = [
+//   0,
+//   1,
+//   "2 1",
+//   "3 2 1",
+//   "4 3 2 1",
+//   "5 4 3 2 1",
+//   "6 5 4 3 2 1",
+//   "7 6 5 4 3 2 1",
+//   "8 7 6 5 4 3 2 1",
+//   "9 8 7 6 5 4 3 2 1",
+// ];
+// let n = prompt("1-9 hoorond Natural too: ");
+// if (
+//   n != 1 &&
+//   n != 2 &&
+//   n != 3 &&
+//   n != 4 &&
+//   n != 5 &&
+//   n != 6 &&
+//   n != 7 &&
+//   n != 8 &&
+//   n != 9
+// ) {
+//   console.log("Wrong input, perhaps?");
+// }
+// let i = 0;
+// for (i = n; i > 0; i--) {
+//   console.log(cipher[n]);
+// }
+
+// 75) RGB7402 Давхар давталт 2 -- 10 aas baga buhel too
+// let cipher = [
+//   "0",
+//   "1",
+//   "1 2",
+//   "1 2 3",
+//   "1 2 3 4",
+//   "1 2 3 4 5",
+//   "1 2 3 4 5 6",
+//   "1 2 3 4 5 6 7",
+//   "1 2 3 4 5 6 7 8",
+//   "1 2 3 4 5 6 7 8 9",
+// ];
+// let n = prompt("1-9 hoorond Natural too: ");
+// let i = 1;
+// while (i <= n) {
+//   console.log(cipher[i]);
+//   i++;
+// }
+
+// 76)
