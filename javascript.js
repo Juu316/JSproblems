@@ -981,4 +981,50 @@
 //   i++;
 // }
 
-// 76)
+// 76) RGB7403 
+// let cipher = [
+//   "0",
+//   "1",
+//   "1 2",
+//   "1 2 3",
+//   "1 2 3 4",
+//   "1 2 3 4 5",
+//   "1 2 3 4 5 6",
+//   "1 2 3 4 5 6 7",
+//   "1 2 3 4 5 6 7 8",
+//   "1 2 3 4 5 6 7 8 9",
+// ];
+// let n = prompt("1-9 hoorond Natural too: ");
+// let i = 1;
+// while(n>=i){
+//     console.log(cipher[n]);
+//     n-=1;
+// }
+
+// 77) RGB7404
+// 
+
+
+// let i = 1;
+// function line(n){
+//     console.log(n);
+//     return ;
+// }
+// let answer = line(n);
+
+// for(i; i<=n; i++){
+//     for(){
+//         console.log(n)
+//     }
+
+
+let a = prompt("any integer pls:");
+function display(){
+    return document.getElementById("demo").innerHTML = "How many times will I be written? "+a;
+}
+let d = display();
+
+  // Display Properties
+  for(let i = 1; i <=a; i++){
+    document.getElementById("demo").innerHTML = d;
+  }
