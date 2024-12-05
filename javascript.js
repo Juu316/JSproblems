@@ -472,15 +472,17 @@
 // console.log(sum);
 
 // 36) n! ол.
-// let i, n, fac=1;
-// n = 5;
-// if(n==1){
-//   fac=0;
-// }else{
-// for (i=1; i<=n; i++ ){
-//   fac=fac*i;
-// } }
-// console.log(fac);
+// let n = prompt("n! ол. n:");
+// let a;
+// function factorial(a) {
+//   let i,
+//     fac = 1;
+//   for (i = 1; i <= a; i++) {
+//     fac = fac * i;
+//   }
+//   return fac;
+// }
+//console.log(factorial(n))
 
 // 37) 100-гийн тоог тодорхой давталт ашиглан өгөгдсөн тоон удаа нэм.
 // let n, sum;
@@ -981,7 +983,8 @@
 //   i++;
 // }
 
-// 76) RGB7403 
+// 76) RGB7403
+// /*SOLUTION 1: enenees uur yaj hiihee medku bsiimaa */
 // let cipher = [
 //   "0",
 //   "1",
@@ -1000,31 +1003,102 @@
 //     console.log(cipher[n]);
 //     n-=1;
 // }
-
-// 77) RGB7404
-// 
-
-
-// let i = 1;
-// function line(n){
-//     console.log(n);
-//     return ;
-// }
-// let answer = line(n);
-
-// for(i; i<=n; i++){
-//     for(){
-//         console.log(n)
+// /* SOLUTION 2: */
+// let = n = prompt("bla2");
+// function printNumbers(n) {
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n - i + 1; j++) {
+//       console.log(j + " ");
 //     }
+//     console.log("");
+//   }
+// }
+// printNumbers(n);
 
+// 77) RGB7404   5 4 3 2 1  4 3 2 1  3 2 1  2 1  1
+// let = n = prompt("bla2");
+// function printNumbers(n) {
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = n - i + 1; j >= 1; j--) {
+//       console.log(j + " ");
+//     }
+//     console.log("");
+//   }
+// }
+// printNumbers(n);
 
-let a = prompt("any integer pls:");
-function display(){
-    return document.getElementById("demo").innerHTML = "How many times will I be written? "+a;
-}
-let d = display();
+// 78) RGB7405 - Давхар давталт 5
+// let = n = prompt("bla2");
+// function printNumbers(n) {
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = n; j >= i; j--) {
+//       console.log(j + " ");
+//     }
+//     console.log("");
+//   }
+// }
+// printNumbers(n);
 
-  // Display Properties
-  for(let i = 1; i <=a; i++){
-    document.getElementById("demo").innerHTML = d;
-  }
+// 79) RGB7090 - Шагай    k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол.
+//Шагай нь морь, тэмээ, хонь, ямаа гэсэн 4 янзаар бууна.
+//// Variant 1: Shagaig hoorondoo uur ungutei gej uzii.
+// let k = prompt(
+//   "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
+// );
+// let answer = 0;
+// answer = 4 ** k;
+// console.log("answer:" + answer);
+
+//// Variant 2: Shagaig adilhan gej uzii.
+// let k = prompt(
+//   "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
+// );
+// let answer;
+// k = Math.floor(k);
+// answer = ((k + 1) * (k + 2) * (k + 3)) / 6;
+// console.log("k ширхэг шагайг орхиход буух ялгаатай боломжийн тоо: "+answer);
+
+// 80) RGB7172 - Гурвалжны хэлбэр
+// let a = prompt("Gurvaljnii tal 1:"),
+//   b = prompt("Gurvaljnii tal 2:"),
+//   c = prompt("Gurvaljnii tal 3:");
+// a = Math.abs(a);
+// b = Math.abs(b);
+// c = Math.abs(c);
+// let high;
+// if (a + b > c && a + c > b && b + c > a) {
+//   if (a > b && a > c) {
+//     high = a;
+//   }
+//   if (b > a && b > c) {
+//     high = b;
+//   }
+//   if (c > a && c > b) {
+//     high = c;
+//   }
+//   let equal;
+//   if (a == b && b == c && a == c) {
+//     equal = a;
+//   }
+//   if (
+//     c * c == a * a + b * b ||
+//     b * b == a * a + c * c ||
+//     a * a == c * c + b * b
+//   ) {
+//     console.log("Right");
+//   } else if (
+//     c * c > a * a + b * b ||
+//     b * b > a * a + c * c ||
+//     a * a > c * c + b * b
+//   ) {
+//     console.log("Obtuse");
+//   } else if (
+//     c * c < a * a + b * b ||
+//     b * b < a * a + c * c ||
+//     a * a < c * c + b * b
+//   ) {
+//     console.log("Acute");
+//   }
+// } else {
+//   console.log("Gurvaljin bish l bnda");
+// }

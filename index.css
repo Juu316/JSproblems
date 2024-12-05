@@ -3,13 +3,11 @@
 }
 body {
   margin: 0;
+  background-color: rgb(47, 36, 16);
+  font-family: monospace;
+  color: darkorchid;
 }
-main {
-  padding-right: 200px;
-  padding-left: 200px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: ;
+
+.black {
+  background-color: black;
 }
