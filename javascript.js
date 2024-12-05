@@ -1102,3 +1102,29 @@
 // } else {
 //   console.log("Gurvaljin bish l bnda");
 // }
+
+//81) RGB7316 - Гурван тооны ХБЕХ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// let n = prompt("Too 1:");
+// let m = prompt("Too 2:");
+// let l = prompt("Too 3:");
+// function gcdThreeNumbers(a, b, c) {
+//   function gcd(a, b) {
+//     while (b) {
+//       const temp = b;
+//       b = a % b;
+//       a = temp;
+//     }
+//     return a;
+//   }
+//   return gcd(a, gcd(b, c));
+// }
+//   console.log("GCD:"+gcdThreeNumbers(n, m, l)); // ХИЕХ шүү энэ
+  //// toog anhnii toonii urjvert zadlah code bichih geed uzii
+let n = prompt("Anhnii toonii zadargaa. n:")
+
+for(let i = 2; 1<=n; i++){
+  if(n%i==0){
+    n = n/i;
+    console.log(i);
+  }
+}
