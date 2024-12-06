@@ -581,8 +581,7 @@
 // }else{console.log("wrong input brother")}
 
 // 45) Өгөгдсөн сар аль улиралд хамаарах вэ. Улирлыг англиар бичихдээ эхний үсгийг томоор бичнэ үү.
-// let a;
-// a = 11;
+// let a = prompt("Sar :");
 // if (a ==11 || a==12 || a==1){
 //   console.log("Winter")
 // }else if (a ==2 || a==3 || a==4){
@@ -1118,13 +1117,110 @@
 //   }
 //   return gcd(a, gcd(b, c));
 // }
-//   console.log("GCD:"+gcdThreeNumbers(n, m, l)); // ХИЕХ шүү энэ
-  //// toog anhnii toonii urjvert zadlah code bichih geed uzii
-let n = prompt("Anhnii toonii zadargaa. n:")
+// console.log("GCD:" + gcdThreeNumbers(n, m, l)); //// ХИЕХ шүү энэ
+////////// toog anhnii toonii urjvert zadlah function, code
+// let n = prompt("Too:");
+// function prime(n) {
+//   let answer = 1;
+//   for (let i = 2; n >= i; i++) {
+//     if (n % i == 0) {
+//       while (n % i == 0) {
+//         n = n / i;
+//         // console.log(i);
+//         answer = i + " * " + answer;
+//         if (n % i != 0) break;
+//       }
+//     }
+//   }
+//   return answer;
+//   //   console.log(answer);
+// }
+// console.log(prime(n));
 
-for(let i = 2; 1<=n; i++){
-  if(n%i==0){
-    n = n/i;
-    console.log(i);
-  }
-}
+// 82)RGB7317 - Цөөн квадрат Өгөгдсөн тэгш өнцөгтийг хамгийн цөөн квадратадуудад хуваа.
+// Input:11 4
+// Output:
+// 4 2
+// 3 1
+// 1 3
+// let a = prompt("Tegsh untsugt tal 1:"),
+//   b = prompt("Tegsh untsugt tal 2:"),
+//   big = Math.max(a, b),
+//   small = Math.min(a, b);
+// let len = [];
+// let count = [];
+// let i = 0,
+//   tal;
+// while (1) {
+//   len[i] = small;
+//   count[i] = Math.floor(big / small);
+//   tal = big % small;
+//   big = small;
+//   small = tal;
+//   i++;
+//   if (tal == 0) break;
+// }
+// console.log("    Tal: " + len);
+// console.log("Shirheg: " + count);
+
+// 83) RGB7318 - Залгаад квадрат зэрэг--Өгөгдсөн натурал тооны бичиглэлийн эх адагт нь 1-ийн цифр залгаж бичээд квадрат зэрэгт дэвшүүл.
+// let n = prompt(
+//   "Өгөгдсөн натурал тооны бичиглэлийн эх адагт нь 1-ийн цифр залгаж бичээд квадрат зэрэгт дэвшүүл. n:"
+// );
+// let zalgaa = Math.abs("1" + n + "1");
+// let answer = zalgaa ** 2;
+// console.log(answer);
+
+// 84) RGB7030 - Гипотенуз
+// let a = prompt("leg 1:"),
+//   b = prompt("leg 2:");
+// let c;
+// c = Math.sqrt(a ** 2 + b ** 2);
+// console.log(c);
+
+// 85) RGB7031 - Гурвалжны талбай
+// let a = prompt("side 1:"),
+//   b = prompt("side 2:"),
+//   c = prompt("side 3:");
+// let numa = Number(a);
+// let numb = Number(b);
+// let numc = Number(c);
+// const s = (numa + numb + numc) / 2;
+// let area = Math.sqrt(s * (s - numa) * (s - numb) * (s - numc));
+// console.log(area);
+// console.log(s + " s");
+
+// 86) RGB7032 - Дугуйн талбай, taslalaas hoishih 4 oron bolon Pi=3.141592
+// const Pi = 3.141592;
+// let r = prompt("Radius:");
+
+// let s = Pi * r * r;
+// let s4 = s.toFixed(4);
+// console.log(s4);
+
+// 87) RGB7033 - Хоёр цэгийн хоорондох зай --1 хэмжээст тоон шулуун, 2 хэмжээст координатын хавтгай болон 3 хэмжээст огторгуйд координатаараа өгөгдсөн 2 цэгүүдийн хоорондох зайг ол.
+// let _1s = prompt("1 dimension start:");
+// let _1e = prompt("1 dimension end:");
+// let _2sx = prompt("2 dimension start x:");
+// let _2sy = prompt("2 dimension start y:");
+// let _2ex = prompt("2 dimension end x:");
+// let _2ey = prompt("2 dimension end y:");
+// let _3sx = prompt("3 dimension start x:");
+// let _3sy = prompt("3 dimension start y:");
+// let _3sz = prompt("3 dimension start z:");
+// let _3ex = prompt("3 dimension start x:");
+// let _3ey = prompt("3 dimension start y:");
+// let _3ez = prompt("3 dimension start z:");
+// let length1;
+// lenght1 = Math.abs(_1s - _1e);
+// console.log(lenght1.toFixed(3));
+// let lenght2;
+// lenght2 = Math.sqrt((_2sx - _2ex) ** 2 + (_2sy - _2ey) ** 2);
+// console.log(lenght2.toFixed(3));
+// let lenght3;
+// lenght3 = Math.sqrt(
+//   (_3ex - _3sx) ** 2 + (_3sy - _3ey) ** 2 + (_3sz - _3ez) ** 2
+// );
+// console.log(lenght3.toFixed(3));
+
+//88)
