@@ -1223,4 +1223,124 @@
 // );
 // console.log(lenght3.toFixed(3));
 
-//88)
+//88) RGB7034 - 2 тооны дундаж -- Өгөгдсөн 2 бодит  эерэг тооны арифметик болон геометр дунджийг ол.
+// let a = prompt("Too:");
+// let b = prompt("Too 2:");
+// function geometryMed(n,m){
+//  return Math.sqrt(n*m);
+// }
+// function arithmeticMed(n,m){
+//   return (parseInt(a)+parseInt(b))/2;
+// }
+// console.log("Arithmetic median: "+ arithmeticMed(a,b));
+// console.log("Geomtery median: "+geometryMed(a,b));
+
+// 89) RGB7075 Өгөгдсөн n тоо хүртэлх натурал тоонуудын кубуудын нийлбэрийг ол.
+// let n = prompt("n:");
+// let i, sum=0;
+// if(n<=2000){
+// for(i=1;i<=n;i++){
+// sum = sum + i**3;
+
+// }
+// console.log(sum);}
+
+// 90)RGB7035 Тойргийн радиус өгөгдсөн үед тойргийн талбай ба уртыг ол.
+// let r=prompt("r:");
+// let s = 0, p = 0;
+// s = Math.PI*r*r;
+// p = 2*Math.PI*r;
+// console.log("S="+s);
+// console.log("P="+p);
+
+// 91) RGB7500 - Массив нийлбэр
+
+// let x  = prompt("Toon shirheg:");
+// let list=[];
+// let ans=0;
+// for(let i =1; i<=x; i++){
+// list[i]= prompt("index "+ i);
+// ans = ans + Number(list[i]);
+// }
+// console.log(ans);
+
+// 92) RGB7501 - Массив тэгээс их нийлбэр
+// let x  = prompt("Toon shirheg:");
+// let list=[];
+// let ans=0;
+// for(let i =1; i<=x; i++){
+// list[i]= prompt("index "+ i);
+// if(list[i]>0){ans = ans + Number(list[i]);}
+
+// }
+// console.log(ans);
+
+// 93) RGB7502 - Муугийн тоо  Сурагчдын дүн нэг хэмжээст массиваар өгөгдөв. Муу дүгнэгдсэн сурагчдын тоог ол.
+// let x  = prompt("Toon shirheg:");
+// let list=[];
+// let ans=0;
+// for(let i =1; i<=x; i++){
+// list[i]= prompt("index "+ i);
+// if(list[i]<60){ans = ans + 1;}
+
+// }
+// console.log(ans);
+
+// 94) RGB7503 - Сондгой нь их үү
+// let x  = prompt("Toon shirheg:");
+// if(x>=1){
+// let list=[];
+// let ans=0;
+// let sondgoi=0, tegsh=0;
+// for(let i =1; i<=x; i++){
+// list[i]= prompt("index "+ i);
+// if(list[i]%2==0){tegsh = tegsh + 1;}
+// if(list[i]%2==1){sondgoi = sondgoi + 1;}
+// }
+// if(tegsh>sondgoi){
+//     console.log("NO");
+// }
+// if(sondgoi>tegsh){
+//     console.log("YES");
+// }
+// if(sondgoi==tegsh){console.log("Equal");}
+// }else{console.log("Wrong input, perhaps?")}
+
+// 95) RGB7504 - Массивын их -- Өгөгдсөн нэг хэмжээст бүхэл тоон массив дахь хамгийн их элементийг / тоог / ол.
+// let x  = prompt("Toon shirheg:");
+// let y = Number(x);
+// const list=[];
+// let i;
+// let ans;
+// for(i =0; i<y; i++){
+// list[i]= prompt("index "+ i);
+// }
+// const array =list.sort(function(a,b){return b-a});
+// console.log("Hamgiin ih element: "+array[0]);
+
+// 96) RGB7505 - Массивын бага -- Өгөгдсөн нэг хэмжээст бүхэл тоон массивын хамгийн бага элементийг /тоог/ ол
+// let x  = prompt("Toon shirheg:");
+// let y = Number(x);
+// const list=[];
+// let i;
+// let ans;
+// for(i =0; i<y; i++){
+// list[i]= prompt("index "+ i);
+// }
+// const array =list.sort(function(a,b){return a-b});
+// console.log("Hamgiin baga element: "+array[0]);
+
+// 97) RGB7506 - Өгөгдсөн нэг хэмжээст бүхэл тоон массивт өгөгдсөн тоо хэд байгааг ол.
+let n = prompt("Array dahi elementiin too: ");
+let m = Number(n);
+const list = [];
+let i;
+for(i=0;i<m; i++){
+    list[i]=prompt("index "+i)
+}
+let x = prompt("Array iin ali elementiin toog medmeer baina ve?");
+function whatever(value){
+return value = x;
+}
+const single = list.find(whatever);
+console.log(single); //not finished
