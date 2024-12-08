@@ -1334,13 +1334,19 @@
 let n = prompt("Array dahi elementiin too: ");
 let m = Number(n);
 const list = [];
-let i;
+let i,j,count=0;
 for(i=0;i<m; i++){
     list[i]=prompt("index "+i)
 }
 let x = prompt("Array iin ali elementiin toog medmeer baina ve?");
-function whatever(value){
-return value = x;
+for(j =0; j<m;i++){
+    if(list[j]==x){
+        count=count+1;
+    }
 }
-const single = list.find(whatever);
-console.log(single); //not finished
+console.log(count);
+// function whatever(value){
+// return value = x;
+// }
+// const single = list.find(whatever);
+// console.log(single); //not finished
