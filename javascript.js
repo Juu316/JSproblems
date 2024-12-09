@@ -961,77 +961,89 @@ n*=1;
  
   
   // 59) RGB7304 Өгөгдсөн тоон дахь сондгой цифрүүдийн тоог ол.
-  // let n, sum, cipher;
-  // n = prompt("Too oruulna uu:");
-  // sum = 0;
-  // if (n >= 0) {
-  //   while (n >= 1) {
-  //     cipher = n % 10;
-  //     if (cipher % 2 == 1) {
-  //       sum = sum + 1;
-  //     }
-  //     n = Math.floor(n / 10);
-  //   }
-  //   console.log(sum);
-  // } else {
-  //   console.log("Wrong input, perhaps?");
-  // }
+  function RGB7304(){
+    let n, sum, cipher;
+    n = prompt("Too oruulna uu:");
+    sum = 0;
+    if (n >= 0) {
+      while (n >= 1) {
+        cipher = n % 10;
+        if (cipher % 2 == 1) {
+          sum = sum + 1;
+        }
+        n = Math.floor(n / 10);
+      }
+      console.log(sum);
+    } else {
+      console.log("Wrong input, perhaps?");
+    }
+  }
+  
   
   // 60) RGB7305 Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол.
-  // let n, m, sum, cipher;
-  // n = prompt(
-  //   "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Too oruulna uu:"
-  // );
-  // m = prompt(
-  //   "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Cipher oruulna uu:"
-  // );
-  // sum = 0;
-  // if (n >= 0) {
-  //   while (n >= 1) {
-  //     cipher = n % 10;
-  //     n = Math.floor(n / 10);
-  //     if (cipher == m) {
-  //       sum = sum + 1;
-  //     }
-  //   }
-  //   console.log(sum);
-  // } else {
-  //   console.log("Wrong input, perhaps?");
-  // }
+  function RGB7305(){
+let n, m, sum, cipher;
+  n = prompt(
+    "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Too oruulna uu:"
+  );
+  m = prompt(
+    "Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол. Cipher oruulna uu:"
+  );
+  sum = 0;
+  if (n >= 0) {
+    while (n >= 1) {
+      cipher = n % 10;
+      n = Math.floor(n / 10);
+      if (cipher == m) {
+        sum = sum + 1;
+      }
+    }
+    console.log(sum);
+  } else {
+    console.log("Wrong input, perhaps?");
+  }
+  }
+  
   
   // 61) RGB7306 Өгөгдсөн тооны их цифрийг ол.
-  // let n, cipher, highest;
-  // highest = 0;
-  // n = prompt("Өгөгдсөн тооны их цифрийг ол. Too:");
-  // if (n >= 0) {
-  //   while (n >= 1) {
-  //     cipher = n % 10;
-  //     n = Math.floor(n / 10);
-  //     if (cipher > highest) {
-  //       highest = cipher;
-  //     }
-  //   }
-  //   console.log(highest);
-  // } else {
-  //   console.log("Wrong input, perhaps?");
-  // }
+  function RGB7306(){
+    let n, cipher, highest;
+    highest = 0;
+    n = prompt("Өгөгдсөн тооны их цифрийг ол. Too:");
+    if (n >= 0) {
+      while (n >= 1) {
+        cipher = n % 10;
+        n = Math.floor(n / 10);
+        if (cipher > highest) {
+          highest = cipher;
+        }
+      }
+      console.log(highest);
+    } else {
+      console.log("Wrong input, perhaps?");
+    }
+  }
+  
   
   // 62) RGB7307 Өгөгдсөн тоон дахь бага цифрийг ол.
-  // let n, cipher, lowest;
-  // lowest = 9;
-  // n = prompt("Өгөгдсөн тоон дахь бага цифрийг ол. Too:");
-  // if (n >= 0) {
-  //   while (n >= 1) {
-  //     cipher = n % 10;
-  //     n = Math.floor(n / 10);
-  //     if (cipher <= lowest) {
-  //       lowest = cipher;
-  //     }
-  //   }
-  //   console.log(lowest);
-  // } else {
-  //   console.log("Wrong input, perhaps?");
-  // }
+  function RGB7307(){
+    let n, cipher, lowest;
+    lowest = 9;
+    n = prompt("Өгөгдсөн тоон дахь бага цифрийг ол. Too:");
+    if (n >= 0) {
+      while (n >= 1) {
+        cipher = n % 10;
+        n = Math.floor(n / 10);
+        if (cipher <= lowest) {
+          lowest = cipher;
+        }
+      }
+      console.log(lowest);
+    } else {
+      console.log("Wrong input, perhaps?");
+    }
+  }
+ RGB7307();
   
   // 63) RGB7308 Өгөгдсөн тооны тонгорогсон тоог ол.
   // let n, reverse, cipher;
