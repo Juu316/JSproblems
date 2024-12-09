@@ -1043,23 +1043,24 @@ let n, m, sum, cipher;
       console.log("Wrong input, perhaps?");
     }
   }
- RGB7307();
   
   // 63) RGB7308 Өгөгдсөн тооны тонгорогсон тоог ол.
-  // let n, reverse, cipher;
-  // n = prompt("Өгөгдсөн тооны тонгорогсон тоог ол. Too:");
-  // reverse = 0;
-  // if (n >= 0) {
-  //   do {
-  //     cipher = n % 10;
-  //     reverse = reverse + cipher;
-  //     n = Math.floor(n / 10);
-  //     reverse = reverse * 10;
-  //   } while (n >= 1);
-  //   console.log("тонгорогсон тоо: " + reverse / 10);
-  // } else {
-  //   console.log("Wrong input, perhaps?");
-  // }
+  function RGB7308(){
+    let n, reverse, cipher;
+    n = prompt("Өгөгдсөн тооны тонгорогсон тоог ол. Too:");
+    reverse = 0;
+    if (n >= 0) {
+      do {
+        cipher = n % 10;
+        reverse = reverse + cipher;
+        n = Math.floor(n / 10);
+        reverse = reverse * 10;
+      } while (n >= 1);
+      console.log("тонгорогсон тоо: " + reverse / 10);
+    } else {
+      console.log("Wrong input, perhaps?");
+    }
+  }
   
   // 64) RGB7309 Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Палиндром тоо гэдэг нь тонгорогсон тоотойгоо тэнцүү тоог хэлнэ.
   function RGB7309() {
@@ -1086,104 +1087,134 @@ let n, m, sum, cipher;
   }
   
   //65) RGB7310 Өгөгдсөн тоо хоёрын зэрэгт мөн бол YES үгүй бол NO гэж хэвлэ.
-  // let n, i;
-  // n = prompt("Өгөгдсөн тоо хоёрын зэрэгт мөн бол YES үгүй бол NO гэж хэвлэ. Too:");
-  // while(n<1 && n>0){
-  //   n = n * 2;
-  // }
-  // while(n>=4){
-  //   n = n/2;
-  // }
-  // if(n%2==0 || n==1){console.log("YES")}else{console.log("NO")}
+  function RGB7310(){
+    let n, i;
+    n = prompt("Өгөгдсөн тоо хоёрын зэрэгт мөн бол YES үгүй бол NO гэж хэвлэ. Too:");
+    while(n<1 && n>0){
+      n = n * 2;
+    }
+    while(n>=4){
+      n = n/2;
+    }
+    if(n%2==0 || n==1){console.log("YES")}else{console.log("NO")}
+  }
+ 
   
   // 66) RGB7311 Өгөгдсөн тоог 3-ын зэрэгтэд хураа.
-  // let n ;
-  // n = prompt("Өгөгдсөн тоог 3-ын зэрэгтэд хураа. Too:");
-  // while(n%3==0 && n>1){
-  //   n=n/3;
-  // }
-  // console.log(n);
+  function RGB7311(){
+    let n ;
+    n = prompt("Өгөгдсөн тоог 3-ын зэрэгтэд хураа. Too:");
+    while(n%3==0 && n>1){
+      n=n/3;
+    }
+    console.log(n);
+  }
   
   // 67) RGB7312 Өгөгдсөн тоо ямар нэгэн тооны факториал бол тэр тоог хэвлэ. Үгүй бол No гэж хэвлэ.
-  // let n, i = 1, m = 1;
-  // n = prompt("Factorial mun uu? Too:");
-  // while (n > m) {
-  //   m = m * i;
-  //   i++;
-  // }
-  // if (n == m) {
-  //   console.log(m);
-  // } else { console.log("No") }
-  
+  function RGB7312(){
+    let n, i = 1, m = 1;
+    n = prompt("Factorial mun uu? Too:");
+    while (n > m) {
+      m = m * i;
+      i++;
+    }
+    if (n == m) {
+      console.log(m);
+    } else { console.log("No") }  
+  }
+ 
   // 68) RGB7313 - ХИЕХ
-  // let a = prompt("Too 1:");
-  // let b = prompt("Too 2:");
-  // while (b !== 0) {
-  //   let temp = b;
-  //   b = a % b;
-  //   a = temp;
-  // }
-  // console.log("ХИЕХ= "a);
+  function RGB7313(){
+    let a = prompt("Too 1:");
+    let b = prompt("Too 2:");
+    while (b !== 0) {
+      let temp = b;
+      b = a % b;
+      a = temp;
+    }
+    console.log("ХИЕХ= "+a);
+  }
+ 
   
   // 69) RGB7314 - ХБЕХ
-  // let a = prompt("Too 1:");
-  // let b = prompt("Too 2:");
-  // // /*GCD олох функц*/
-  // function gcd(a, b) {
-  //   while (b !== 0) {
-  //     let temp = b;
-  //     b = a % b;
-  //     a = temp;
-  //   }
-  //   return Math.abs(a);
-  // }
-  // // /*LCM олох функц*/
-  // function lcm(a, b) {
-  //   return Math.abs(a * b) / gcd(a, b);
-  // }
-  // console.log(lcm(a, b));
+  function RGB7314(){
+    let a = prompt("Too 1:");
+    let b = prompt("Too 2:");
+     /*GCD олох функц*/
+    function gcd(a, b) {
+      while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+      }
+      return Math.abs(a);
+    }
+    // /*LCM олох функц*/
+    function lcm(a, b) {
+      return Math.abs(a * b) / gcd(a, b);
+    }
+    console.log(lcm(a, b));
+  }
   
   // 70) RGB7315 - Бутархайг хураа
-  // let a = prompt("Butarhain hurtver : ");
-  // let b = prompt("Butarhain huvaari : ");
-  // function gcd(a, b) {
-  //   while (b !== 0) {
-  //     let temp = b;
-  //     b = a % b;
-  //     a = temp;
-  //   }
-  //   return Math.abs(a);
-  // }
-  // console.log("Hurtver:" + a / gcd(a, b));
-  // console.log("Huvaari:" + b / gcd(a, b));
+  function RGB7315(){
+    let a = prompt("Butarhain hurtver : ");
+    let b = prompt("Butarhain huvaari : ");
+    function gcd(a, b) {
+      while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+      }
+      return Math.abs(a);
+    }
+    console.log("Hurtver:" + a / gcd(a, b));
+    console.log("Huvaari:" + b / gcd(a, b));
+  }
   
   // 71) RGB7220 - Цифр давталт Өгөгдсөн цифрийг цифрийнх нь тоогоор давтан хэвлэ.
-  // let n, cipher;
-  // n = prompt("Cipher:");
-  // for (let i = 1; i <= n; i++) {
-  //   console.log(n);
-  // }
-  
+  function RGB7220(){
+    let n = prompt("Cipher:");
+    for (let i = 1; i <= n; i++) {
+      console.log(n);
+    }
+  }
+
   // 72) RGB7221 - Цифр хүртэлх -- Өгөгдсөн цифр хүртэлх цифрүүдийг нэг хоосон зайгаар тусгаарлан хэвлэ. Сүүлийн цифрийн ард хоосон зай байхгүй. Мөр дуусгана.
-  // let cipher = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  // let n = prompt("Cipher :");
-  // for (let i = 0; i < n; i++) {
-  //   console.log(cipher[i]);
-  // } /* log deer bol zai , mur duusgah edr hud2 ahah,  */
+  function RGB7221(){
+    let n = prompt("Cipher :");
+    let ans="";
+    for (let i = 0; i < n; i++) {
+      ans = ans+ " "+ i;
+    } 
+    console.log(ans);
+  }
   
   // 73) RGB7222 - Есөөс цифр хүртэл - Есийн цифрээс өгөгдсөн цифр хүртэл нэг нэгээр нэг мөрөнд хэвлэ.
-  // let n = prompt("Cipher :");
-  // for (let i = 9; i >= n; i--) {
-  //   console.log(i);
-  // }
+  function RGB7222(){
+    let n = prompt("Cipher :");
+    let ans="";
+    for (let i = 9; i >= n; i--) {
+      ans = ans +" " + i;
+    }
+    console.log(ans);
+  }
   
   // 74) RGB7400 Өгөгдсөн натурал тоо хүртэлх тоонуудыг дараах хэлбэрээр хэвлэнэ үү.
-  // let n = prompt("Natural too: ");
-  // let a = 0;
-  // for (let i = 1; i <= n; i++) {
-  //   console.log(i);
-  // /* tegj bgaad neg murund bichij surnaa */
-  
+//   function RGB7400(){
+//     let n = prompt("Natural too: ");
+//     let a = "";
+//     let b;
+//     for (let i = 1; i <= n; i++) {
+//       for(let j=1; j<=n; j++){
+//         a= a+""+j;
+//       }
+//       b=a;
+//       console.log(a);
+//       ///console.log(i);
+//   }
+// }
+// RGB7400();
   //75) RGB7401 Давхар давталт 1
   // let cipher = [
   //   0,
