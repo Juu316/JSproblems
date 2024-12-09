@@ -1201,193 +1201,179 @@ let n, m, sum, cipher;
   }
   
   // 74) RGB7400 Өгөгдсөн натурал тоо хүртэлх тоонуудыг дараах хэлбэрээр хэвлэнэ үү.
-//   function RGB7400(){
-//     let n = prompt("Natural too: ");
-//     let a = "";
-//     let b;
-//     for (let i = 1; i <= n; i++) {
-//       for(let j=1; j<=n; j++){
-//         a= a+""+j;
-//       }
-//       b=a;
-//       console.log(a);
-//       ///console.log(i);
-//   }
-// }
-// RGB7400();
+  function RGB7400(){
+    let n = prompt("Natural too: ");
+    let a = "";
+    let j=1;
+    while(j<=n){
+      a= a+""+j;
+      j++;
+    }
+    for (let i = 1; i <= n; i++) {
+      console.log(a);
+  }
+}
+//RGB7400();
+
   //75) RGB7401 Давхар давталт 1
-  // let cipher = [
-  //   0,
-  //   1,
-  //   "2 1",
-  //   "3 2 1",
-  //   "4 3 2 1",
-  //   "5 4 3 2 1",
-  //   "6 5 4 3 2 1",
-  //   "7 6 5 4 3 2 1",
-  //   "8 7 6 5 4 3 2 1",
-  //   "9 8 7 6 5 4 3 2 1",
-  // ];
-  // let n = prompt("1-9 hoorond Natural too: ");
-  // if (
-  //   n != 1 &&
-  //   n != 2 &&
-  //   n != 3 &&
-  //   n != 4 &&
-  //   n != 5 &&
-  //   n != 6 &&
-  //   n != 7 &&
-  //   n != 8 &&
-  //   n != 9
-  // ) {
-  //   console.log("Wrong input, perhaps?");
-  // }
-  // let i = 0;
-  // for (i = n; i > 0; i--) {
-  //   console.log(cipher[n]);
-  // }
+  function RGB7401(){
+    let n = prompt("Natural too: ");
+    let a = "";
+    let j=n;
+    while(j>=1){
+      a= a+""+j;
+      j--;
+    }
+    for (let i = 1; i <= n; i++) {
+      console.log(a);
+  }
+  }
   
   // 76) RGB7402 Давхар давталт 2 -- 10 aas baga buhel too
-  // let cipher = [
-  //   "0",
-  //   "1",
-  //   "1 2",
-  //   "1 2 3",
-  //   "1 2 3 4",
-  //   "1 2 3 4 5",
-  //   "1 2 3 4 5 6",
-  //   "1 2 3 4 5 6 7",
-  //   "1 2 3 4 5 6 7 8",
-  //   "1 2 3 4 5 6 7 8 9",
-  // ];
-  // let n = prompt("1-9 hoorond Natural too: ");
-  // let i = 1;
-  // while (i <= n) {
-  //   console.log(cipher[i]);
-  //   i++;
-  // }
+  function RGB7402(){
+    let n = prompt("Natural too: ");
+    let a = "";
+
+    for (let i = 1; i <= n; i++) {
+      a=a+" "+i;
+      console.log(a);
+  }
+  }
+//RGB7402();
   
   // 77) RGB7403
-  // /*SOLUTION 1: enenees uur yaj hiihee medku bsiimaa */
-  // let cipher = [
-  //   "0",
-  //   "1",
-  //   "1 2",
-  //   "1 2 3",
-  //   "1 2 3 4",
-  //   "1 2 3 4 5",
-  //   "1 2 3 4 5 6",
-  //   "1 2 3 4 5 6 7",
-  //   "1 2 3 4 5 6 7 8",
-  //   "1 2 3 4 5 6 7 8 9",
-  // ];
-  // let n = prompt("1-9 hoorond Natural too: ");
-  // let i = 1;
-  // while(n>=i){
-  //     console.log(cipher[n]);
-  //     n-=1;
-  // }
-  // /* SOLUTION 2: */
-  // let = n = prompt("bla2");
-  // function printNumbers(n) {
-  //   for (let i = 1; i <= n; i++) {
-  //     for (let j = 1; j <= n - i + 1; j++) {
-  //       console.log(j + " ");
-  //     }
-  //     console.log("");
-  //   }
-  // }
-  // printNumbers(n);
+  function RGB7403(){
+    let = n = prompt("n:");
+      let a="";
+      let m;
+      m=n;
+        for(let i = 1; i<=n;i++){
+          for(let j=1;j<=m;j++){
+            a=a+""+j;
+            
+          }
+          console.log(a);
+          a="";
+          m--;;
+        }
+      }
   
-  // 78) RGB7404   5 4 3 2 1  4 3 2 1  3 2 1  2 1  1
-  // let = n = prompt("bla2");
-  // function printNumbers(n) {
-  //   for (let i = 1; i <= n; i++) {
-  //     for (let j = n - i + 1; j >= 1; j--) {
-  //       console.log(j + " ");
-  //     }
-  //     console.log("");
-  //   }
-  // }
-  // printNumbers(n);
-  
+  // 78) RGB7404   
+  function RGB7404(){
+let = n = prompt("n:");
+let a= "";
+let m;
+m=n;
+    for (let i = n; i >= 1; i--) {
+      for (let j =m; j>=i;j--) {
+        a=a + " "+j;
+      }
+      console.log(a);
+      a="";
+    }
+}  
+ 
   // 79) RGB7405 - Давхар давталт 5
-  // let = n = prompt("bla2");
-  // function printNumbers(n) {
-  //   for (let i = 1; i <= n; i++) {
-  //     for (let j = n; j >= i; j--) {
-  //       console.log(j + " ");
-  //     }
-  //     console.log("");
-  //   }
-  // }
-  // printNumbers(n);
+  function RGB7405(){
+    let = n = prompt("n:");
+let a= "";
+let m;
+m=n;
+    for (let i = 1; i <= n; i++) {
+      for (let j =m; j>=i;j--) {
+        a=a + " "+j;
+      }
+      console.log(a);
+      a="";
+    }
+  }
   
   // 80) RGB7090 - Шагай    k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол.
   //Шагай нь морь, тэмээ, хонь, ямаа гэсэн 4 янзаар бууна.
-  //// Variant 1: Shagaig hoorondoo uur ungutei gej uzii.
-  // let k = prompt(
-  //   "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
-  // );
-  // let answer = 0;
-  // answer = 4 ** k;
-  // console.log("answer:" + answer);
+   
+  function RGB7090_1(){
+    //// Variant 1: Shagaig hoorondoo uur ungutei gej uzii.
+    let k = prompt(
+      "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
+    );
+    let answer = 0;
+    answer = 4 ** k;
+    console.log("answer:" + answer);
+  }
+ 
+  function RGB7090_2(){
+  // Variant 2: Shagaig adilhan gej uzii.
+  let k = prompt(
+    "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
+  );
+  let answer;
+  k = Math.floor(k);
+  answer = ((k + 1) * (k + 2) * (k + 3)) / 6;
+  console.log("k ширхэг шагайг орхиход буух ялгаатай боломжийн тоо: "+answer);
+  }
   
-  //// Variant 2: Shagaig adilhan gej uzii.
-  // let k = prompt(
-  //   "k ширхэг шагайг орхиход /хаяхад/ буух ялгаатай боломжийн тоог ол. k:"
-  // );
-  // let answer;
-  // k = Math.floor(k);
-  // answer = ((k + 1) * (k + 2) * (k + 3)) / 6;
-  // console.log("k ширхэг шагайг орхиход буух ялгаатай боломжийн тоо: "+answer);
+
   
   // 81) RGB7172 - Гурвалжны хэлбэр
-  // let a = prompt("Gurvaljnii tal 1:"),
-  //   b = prompt("Gurvaljnii tal 2:"),
-  //   c = prompt("Gurvaljnii tal 3:");
-  // a = Math.abs(a);
-  // b = Math.abs(b);
-  // c = Math.abs(c);
-  // let high;
-  // if (a + b > c && a + c > b && b + c > a) {
-  //   if (a > b && a > c) {
-  //     high = a;
-  //   }
-  //   if (b > a && b > c) {
-  //     high = b;
-  //   }
-  //   if (c > a && c > b) {
-  //     high = c;
-  //   }
-  //   let equal;
-  //   if (a == b && b == c && a == c) {
-  //     equal = a;
-  //   }
-  //   if (
-  //     c * c == a * a + b * b ||
-  //     b * b == a * a + c * c ||
-  //     a * a == c * c + b * b
-  //   ) {
-  //     console.log("Right");
-  //   } else if (
-  //     c * c > a * a + b * b ||
-  //     b * b > a * a + c * c ||
-  //     a * a > c * c + b * b
-  //   ) {
-  //     console.log("Obtuse");
-  //   } else if (
-  //     c * c < a * a + b * b ||
-  //     b * b < a * a + c * c ||
-  //     a * a < c * c + b * b
-  //   ) {
-  //     console.log("Acute");
-  //   }
-  // } else {
-  //   console.log("Gurvaljin bish l bnda");
-  // }
+  function RGB7172(){
+    let a = prompt("Gurvaljnii tal 1:"),
+    b = prompt("Gurvaljnii tal 2:"),
+    c = prompt("Gurvaljnii tal 3:");
+  a = Math.abs(a);
+  b = Math.abs(b);
+  c = Math.abs(c);
+  let high,mid,low;
+  if (a + b > c && a + c > b && b + c > a) {
+    if (a >= b && a >= c) {
+      high = a;
+      mid = b;
+      low = c;
+    }
+    if (b >= a && b >= c ) {
+      high = b;
+      mid =a;
+      low =c;
+    }
+    if (c > a && c > b) {
+      high = c;
+      mid =a;
+      low=b;
+    }
+  
+    if (high**2==low**2+mid**2) {
+      console.log("Right");
+    } else if (high**2>low**2+mid**2) {
+      console.log("Obtuse");
+    } else if (high**2<low**2+mid**2) {
+      console.log("Acute");
+    }
+  } else {
+    console.log("Gurvaljin bish l bnda");
+  }
+  }
+  
   
   //82) RGB7316 - Гурван тооны ХБЕХ  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  function prime(){
+    let n = prompt("Too:");
+    function prime(n) {
+      let answer = 1;
+      for (let i = 2; n >= i; i++) {
+        if (n % i == 0) {
+          while (n % i == 0) {
+            n = n / i;
+            // console.log(i);
+            answer = i + " * " + answer;
+            if (n % i != 0) break;
+          }
+        }
+      }
+      return answer;
+      //   console.log(answer);
+    }
+    console.log(prime(n));
+  }
+  
   // let n = prompt("Too 1:");
   // let m = prompt("Too 2:");
   // let l = prompt("Too 3:");
@@ -1404,23 +1390,7 @@ let n, m, sum, cipher;
   // }
   // console.log("GCD:" + gcdThreeNumbers(n, m, l)); //// ХИЕХ шүү энэ
   ////////// toog anhnii toonii urjvert zadlah function, code
-  // let n = prompt("Too:");
-  // function prime(n) {
-  //   let answer = 1;
-  //   for (let i = 2; n >= i; i++) {
-  //     if (n % i == 0) {
-  //       while (n % i == 0) {
-  //         n = n / i;
-  //         // console.log(i);
-  //         answer = i + " * " + answer;
-  //         if (n % i != 0) break;
-  //       }
-  //     }
-  //   }
-  //   return answer;
-  //   //   console.log(answer);
-  // }
-  // console.log(prime(n));
+
   
   // 83)RGB7317 - Цөөн квадрат Өгөгдсөн тэгш өнцөгтийг хамгийн цөөн квадратадуудад хуваа.
   // Input:11 4
