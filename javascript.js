@@ -1859,6 +1859,20 @@ function RGB7230() {
   console.log(sum.toFixed(3));
 }
 
+// 111) RGB7231 sinx+sin2x+sin3x+...+sinnx 
+function RGB7230() {
+  let x = prompt("x:");
+  let n = prompt("n:");
+  n *= 1;
+  x *= 1;
+  let sum = 0;
+  let i;
+  let lel = 0;
+  for (i = 1; i <= n; i++) {
+    sum = sum + Math.sin(x ** i);
+  }
+  console.log(sum.toFixed(3));
+}
 // bagana ugugdsun, container with most water; 2 array is given: height and position
 function ContainerWithMostWater() {
   const ch = [];
