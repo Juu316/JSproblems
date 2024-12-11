@@ -1747,21 +1747,131 @@ function RGB7212() {
   }
 }
 
-// 103)
+// 103)RGB7213 1*2+2*3+3*4+...+n*(n+1) нийлбэрийг ол.
+function RGB7213() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum;
+  let lel = 0;
+  for (let i = 0; i <= n; i++) {
+    sum = i * (i + 1);
+    lel = lel + sum;
+  }
+  console.log(lel);
+}
+
+// 104) RGB7214 1*n+2*(n-1)+3*(n-2)+...+n*1 нийлбэрийг ол.
+function RGB7214() {
+  let n = prompt("n:");
+  n *= 1;
+  console.log("Type of n is:" + typeof n);
+  let sum = 0;
+  let j = n;
+  for (let i = 1; i <= n; i++, j--) {
+    sum = sum + j * i;
+  }
+  console.log(sum);
+}
+
+// 105)RGB7215 1*2+3*4+5*6+...+(n-1)*n
+function RGB7215() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 0;
+  let j = 2;
+  for (let i = 1; i <= n; i += 2, j += 2) {
+    sum = sum + j * i;
+  }
+  console.log(sum);
+}
+
+// 106) RGB7216  1*2*3+2*3*4+3*4*5+...+n*(n+1)*(n+2)
+function RGB7216() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 0;
+  let j = 2;
+  let k = 3;
+  for (let i = 1; i <= n; i++) {
+    sum = sum + (i + 2) * (i + 1) * i;
+  }
+  console.log(sum);
+}
+
+// 107) RGB7217  n!! - ыг ол. n тоо тэгш бол n хүртэлх тэгш тоонуудын үржвэр. n тоо сондгой бол n хүртэлх сондгой тоонуудын үржвэр. n=6 үед 2*4*6=48, n=7 үед 1*3*5*7=105
+function RGB7217() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 1;
+  let i;
+  if (n % 2 == 0) {
+    i = 2;
+  }
+  if (n % 2 == 1) {
+    i = 1;
+  }
+  for (i; i <= n; i += 2) {
+    sum = sum * i;
+  }
+  console.log(sum);
+}
+
+//108) RGB7218 Зэрэгтүүдийн нийлбэр 1+a1+a2+a3+...+an.
+function RGB7218() {
+  let a = prompt("a:");
+  let n = prompt("n:");
+  n *= 1;
+  a *= 1;
+  let sum = 1;
+  let i;
+  for (i = 1; i <= n; i++) {
+    sum = sum + a ** i;
+  }
+  console.log(sum);
+}
+
+// 109) RGB7219 1!+2!+3!+...+n!
+function RGB7219() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 1;
+  let i;
+  let lel = 0;
+  for (i = 1; i <= n; i++) {
+    sum = sum * i;
+    lel = lel + sum;
+  }
+  console.log(lel);
+}
+
+//110) RGB7230 sin(x)+sin(x2)+sin(x3)+...+sin(xn)
+function RGB7230() {
+  let x = prompt("x:");
+  let n = prompt("n:");
+  n *= 1;
+  x *= 1;
+  let sum = 0;
+  let i;
+  let lel = 0;
+  for (i = 1; i <= n; i++) {
+    sum = sum + Math.sin(x ** i);
+  }
+  console.log(sum.toFixed(3));
+}
 
 // bagana ugugdsun, container with most water; 2 array is given: height and position
-
 function ContainerWithMostWater() {
   const ch = [];
   const cp = [];
   const bagana = [];
-  let a = prompt("Element number of array of heights:");
+  let a = prompt(`Element number of arrays of 
+    1)heights 
+    2)positions:`);
   a *= 1;
-  let b = prompt("Element number of array of position:");
-  b *= 1;
+  // let b = prompt("Element number of array of position:");
+  // b *= 1;
   for (let i = 0; i < a; i++) {
     ch[i] = prompt("Container of height element " + (i + 1) + ":");
-    cp[i] = prompt("Container of position element " + (i + 1) + ":");
   }
   function height(a, b) {
     let ans = 0;
@@ -1773,12 +1883,13 @@ function ContainerWithMostWater() {
     }
     return ans;
   }
-  function length(a, b) {
-    return Math.abs(a - b);
-  }
-  space(ch[1], cp[1]);
+
+  const volume = [];
+  let i = 0;
+  let j = 0;
+  for (i; i < a; i++) {}
 }
-ContainerWithMostWater();
+
 //Ugugdsun array dundaas tegsh toog ni l aguulsan array gargah function
 function evenNumber() {
   let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -1792,3 +1903,29 @@ function anhnii(n) {
   }
   return "Yes";
 }
+//split = String iig array bolgoj huvaaj bgaa
+// let fruits = "apple banana orange kivi";
+// let array = fruits.split(" ");
+// console.log(array);
+
+function emailneesNerAvdag(email) {
+  // let email = prompt(" bat.b@gmail.com zagvartai email bichne uu."); //B.Bat iig avdag function, prompt--
+  let fullNameSplit = email.split("@");
+  let split = fullNameSplit[0].split(".");
+  let firstNameSmall = split[0];
+  let firstNameLetter = firstNameSmall.slice(0, 1);
+  let firstLetter = firstNameLetter.toUpperCase();
+  let restFirstName = firstNameSmall.slice(1);
+  let firstName = firstLetter.concat(restFirstName);
+  let lastName;
+  if (split[1].length > 1) {
+    lastNameFirst = split[1].charAt(0).toUpperCase();
+    lastNameRest = split[1].slice(1);
+    lastName = lastNameFirst.concat(lastNameRest);
+  } else {
+    lastName = split[1].toUpperCase();
+  }
+  //console.log(lastName + "." + firstName);
+  return lastName + "." + firstName;
+}
+//console.log(emailneesNerAvdag("uujuu.ch@gmail.com"));
