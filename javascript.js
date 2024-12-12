@@ -1859,7 +1859,7 @@ function RGB7230() {
   console.log(sum.toFixed(3));
 }
 
-// 111) RGB7231 sinx+sin2x+sin3x+...+sinnx 
+// 111) RGB7231 sinx+sin2x+sin3x+...+sinnx
 function RGB7230() {
   let x = prompt("x:");
   let n = prompt("n:");
@@ -1876,17 +1876,11 @@ function RGB7230() {
 // bagana ugugdsun, container with most water; 2 array is given: height and position
 function ContainerWithMostWater() {
   const ch = [];
-  const cp = [];
-  const bagana = [];
   let a = prompt(`Element number of arrays of 
     1)heights 
     2)positions:`);
   a *= 1;
-  // let b = prompt("Element number of array of position:");
-  // b *= 1;
-  for (let i = 0; i < a; i++) {
-    ch[i] = prompt("Container of height element " + (i + 1) + ":");
-  }
+  const heights = [];
   function height(a, b) {
     let ans = 0;
     if (a >= b) {
@@ -1897,11 +1891,15 @@ function ContainerWithMostWater() {
     }
     return ans;
   }
-
-  const volume = [];
-  let i = 0;
-  let j = 0;
-  for (i; i < a; i++) {}
+  let l = 0;
+  for (let i = 0; i < a; i++) {
+    ch[i] = prompt("Container of height element " + (i + 1) + ":");
+  }
+  for (let j = 0; j <= a; j++) {
+    for (let k = 0; k <= a; k++, l++) {
+      heights[l] = height(ch[j], ch[k]);
+    }
+  }
 }
 
 //Ugugdsun array dundaas tegsh toog ni l aguulsan array gargah function
