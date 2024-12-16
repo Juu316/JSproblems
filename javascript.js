@@ -1860,7 +1860,7 @@ function RGB7230() {
 }
 
 // 111) RGB7231 sinx+sin2x+sin3x+...+sinnx
-function RGB7230() {
+function RGB7231() {
   let x = prompt("x:");
   let n = prompt("n:");
   n *= 1;
@@ -1873,6 +1873,107 @@ function RGB7230() {
   }
   console.log(sum.toFixed(3));
 }
+
+// 112) RGB7232 sinx+sin(sinx)+sin(sin(sinx))+...+sin(sin...sin(sinx)...)
+function RGB7232() {
+  let x = prompt("x:");
+  let n = prompt("n:");
+  n *= 1;
+  x *= 1;
+  let sum = x;
+  let i;
+  let lel = 0;
+  for (i = 1; i <= n; i++) {
+    sum = Math.sin(sum);
+    lel = lel + sum;
+  }
+  console.log(lel.toFixed(3));
+}
+
+// 113) RGB7233 (cos1/sin1)*((cos1+cos2)/(sin1+sin2))*...((cos1+cos2+...+cosn)/(sin1+sin2+...+sinn))
+function RGB7233() {
+  let n = prompt("n:");
+  n *= 1;
+
+  let i;
+  let lel = 1;
+  let cos = 0,
+    sin = 0,
+    tan = 1;
+  for (i = 1; i <= n; i++) {
+    cos = Math.cos(i) + cos;
+    sin = Math.sin(i) + sin;
+    tan = cos / sin;
+    lel = lel * tan;
+  }
+  console.log(lel.toFixed(3));
+}
+
+// 114) RGB7234 - Косинус cos(1+cos(2+...+cos((n-1)+cos(n))...) илэрхийллийг бод.
+function RGB7234() {
+  let n = prompt("n:");
+  n *= 1;
+
+  let i;
+  let lel = 1;
+  let cos = Math.cos(n);
+
+  for (i = n - 1; i >= 1; i--) {
+    cos = Math.cos(i + cos);
+  }
+  console.log(cos.toFixed(3));
+}
+
+// 115) RGB7235 (1+1/12)*(1+1/22)*...*(1+1/n2) Квадратын урвуу үржвэр
+function RGB7235() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 1;
+  let i;
+  let lel = 1;
+  for (i = 1; i <= n; i++) {
+    sum = 1 + 1 / i ** 2;
+    lel = lel * sum;
+  }
+  console.log(lel.toFixed(3));
+}
+
+// 116) RGB7236 Квадрат язгуур доорх 2    (2+(2+...+(2)1/2)1/2...)1/2
+function RGB7236() {
+  let n = prompt("n:");
+  n *= 1;
+  let sum = 0;
+  let i;
+  for (i = 1; i <= n; i++) {
+    sum = Math.sqrt(sum + 2);
+  }
+  console.log(sum.toFixed(9));
+}
+
+// 117) RGB7237 - Арифметик дундаж
+function RGB7237() {
+  let n = prompt(" Array dahi elementiin too shirheg: ");
+  if (n >= 1 && n <= 10000 && Number.isSafeInteger(Number(n))) {
+    let m = Number(n);
+    const list = [];
+    let mid = 0;
+    let sum = 0;
+    let i = 0,
+      count = 0;
+    for (i; i < m; i++) {
+      list[i] = prompt("Element: " + Number(i + 1));
+      list[i] = list[i] * 1;
+      sum = sum + list[i];
+    }
+    mid = sum / m;
+    console.log("Mid: " + mid);
+  } else {
+    console.log("Wrong input, perhaps?");
+  }
+}
+
+// 118) RGB7600 - Хүүн довтолгоо   Хүү n гишгүүртэй шатаар өгсөхдөө 2 янзаар урагшилж чадна. Зогсож байгаа гишгүүрийнхээ дараах гишгүүрт, эсвэл 1 алгасаад дараагийн гишгүүрт алхаж очно. Нэгдүгээр гишгүүрийн өмнө зогсож байгаа хүү n-р гишгүүр хүртэл хичнээн ялгаатай маршрутаар алхаж очиж вэ?
+function RGB7600() {}
 // bagana ugugdsun, container with most water; 2 array is given: height and position
 function ContainerWithMostWater() {
   const ch = [];
